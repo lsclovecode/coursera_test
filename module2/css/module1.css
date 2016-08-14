@@ -1,0 +1,86 @@
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.9em;
+}
+
+section {
+  background-color: rgb(120,120,120);
+  border: 1px solid black;
+  margin: 0 0 30px 0;
+  padding: 0;
+
+}
+
+section p {
+  padding: 0 7px 5px 7px;
+}
+section h2 {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 35%;
+  margin: 0 0 0 65%;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 2px 0;
+}
+#chicken h2 {
+    background-color: #d59898;
+    color: #161616;
+}
+
+#beef h2 {
+    background-color: #c14543;
+    color: #e8e8e8;
+}
+
+#sushi h2 {
+    background-color: #e5d198;
+    color: #161616;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  section{
+    float:left;
+    margin-right:2.5%;
+    width: 30%;
+  }
+
+  #chicken {
+    margin-left: 2.5%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+    float:left;
+    margin-right:2.5%;
+    width: 46.25%;
+  }
+
+  #chicken {
+    margin-left: 2.5%;
+  }
+
+  #sushi {
+    clear:left;
+    margin-left: 2.5%;
+  }
+}
+
+@media (max-width: 767px) {
+    section {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 95%;
+    }
+
+
